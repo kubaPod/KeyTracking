@@ -6,6 +6,16 @@ You don't have to create separate symbol for each key and update association man
 
 This framework is not a panacea for performance tuning in Dynamics. But can help with common usage.
 
+### Installation
+
+    (
+     CreateDirectory[#];
+     URLSave[
+        "https://raw.githubusercontent.com/kubaPod/KeyTracking/master/KeyTracking.m", 
+        FileNameJoin[{#, "KeyTracking.m"}]
+     ]
+    ) & @ FileNameJoin[{$UserBaseDirectory, "Applications", "KeyTracking"}]
+
 
 ### Example
 
