@@ -1,13 +1,13 @@
 # KeyTracking
-Mathematica / Wolfram Language package, provides a mini framework to trigger Dynamics on specific key value changes 
-in opposition updates triggered for association's symbol.
+Mathematica / Wolfram Language package, provides a mini framework to trigger Dynamics on specific key value changes. 
+In opposition to updates triggered by association's symbol.
 
 This framework is not a panacea for performance tuning in Dynamics. But can help with common usage.
 
 ### Limitations
 
- - DynamicKey doesn't support full Dynamic syntax yet
- - won't work with DynamicModule's variables (atm)
+ - `DynamicKey` does  not support full `Dynamic` syntax yet
+ - won't work with `DynamicModule's` variables (atm)
  - single key tracking only, but nested too (atm)
 
 ### Example
@@ -33,4 +33,3 @@ Change in `sessionData["key"]` will prompt every Dynamic containing `sessionData
          50], {All, 300}, Scrollbars ->True
     ]  (*same here *)
 
-ToDo
